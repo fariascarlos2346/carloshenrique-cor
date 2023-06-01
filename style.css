@@ -198,6 +198,27 @@ strong{
    text-align: justify;
 }
 
+input {
+   display: block;
+   background: #F9F9F9;
+   border: 1px solid #E6E6E6;
+   border-radius: 5px;
+   height: 50px;
+   width: 352px;
+   margin-bottom: 20px;
+}
+
+textarea {
+   display: block;
+   background: #F9F9F9;
+   border: 1px solid #E6E6E6;
+   border-radius: 5px;
+   height: 100px;
+   width: 352px;
+   margin-bottom: 20px;
+}
+
+
 footer{
    padding: 4rem;
    display: flex;
@@ -210,4 +231,39 @@ footer > div{
    justify-content: center;
    gap: 2rem;
    flex-wrap: wrap;
+}
+
+form {
+   background: #FFFFFF;
+   padding: 20px;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 10px;
+   opacity: 0;
+   transition: opacity 1s;
+}
+
+button {
+   background: #3508d9;
+   border: none;
+   padding: 20px;
+   border-radius: 5px;
+   font-weight: bold;
+   width: 247px;
+   cursor: pointer;
+   color: #FFFFFF;
+}
+
+button:hover {
+   opacity: 0.8;
+}
+
+.voltar {
+   background: gray;
+}
+
+div {
+   transition: opacity 1s;
 }

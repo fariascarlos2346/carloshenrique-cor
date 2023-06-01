@@ -10,39 +10,38 @@
 <body>
    <header>
       <div class="box-img-header">
-         <img class="img-logo" src="./img/corretor.png" alt="logo">
+         <img class="img-logo" src="./img/carloshenrique.png" alt="logo">
       </div>
       <nav>
-         <a href="#experiences" class="nav-links">Experiência</a>
+         <a href="#experiences" class="nav-links">Regiões de Atuação</a>
          <a href="#who-am-i" class="nav-links">Quem sou eu</a>
-         <a href="#my-projects" class="nav-links">Meus projetos</a>
+         <a href="#my-projects" class="nav-links">Imoveis a Disposição</a>
          <a href="#contact" class="nav-links">Contato</a>
       </nav>
-      <div class="box-btn-actions">
-         <button class="btn-action">Cadastrar</button>
-         <button class="btn-action">Entrar</button>
-      </div>
    </header>
      
    <main>
       <section class="first-section">
          <div>
             <h1>Olá! Eu sou <br> <strong>Carlos Henrique Corretor</strong> </h1>
-            <p>Tenho 48 anos, sou corretor de<strong>Imoveis</strong> qualificado e atualizado.</p>
+            <p> Sou corretor de<strong>Imoveis</strong> qualificado e atualizado. <strong>creci: 13610 </strong> </p>
             <a class="btn-action link-action" href="#contact">Saber mais</a>
+
+            <button onclick="abrir()">Entrar em Contato</button>
          </div>
          <div class="box-img-main">
-            <img class="img-profile" src="./img/eu.jpg" alt="minha foto">
+            <img class="img-profile" src="./img/eufoto1.jpg" alt="minha foto">
          </div>
       </section>
 
       <section id="experiences" class="second-section">
-         <h2 class="title">Experiências</h2>
+         <h2 class="title">João Pessoa</h2>
+         <h3 class="title">Podendo atuar em todo territorio Brasileiro</h3>
          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Vue.js</li>
+            <li>Centro</li>
+            <li>Zona Sul</li>
+            <li>Mangabeira</li>
+            <li>Cristo Redentor</li>
             <li>Valentina</li>
             <li>Praia do Sol</li>
 
@@ -53,12 +52,12 @@
          <h2 class="title">Quem sou eu ?</h2>
          <div>
             <img class="img-wo-am-i" src="./img/eufoto1.jpg" alt="Imagem do carlos">
-            <p>Meu nome é <strong>Carlos Henrique</strong>, estou coursando <strong>Análise e Desenvolvimento de Sistemas</strong>, com muitos projetos tanto pessoais e para alguns amigos, não estar sendo fácil conseguir esta tão esperada oportunidade, a grande multinacional espera por me, tudo no tempo e na hora certa.</p>
+            <p>Meu nome é <strong>Carlos Henrique</strong> atuando como  <strong>Corretor </strong> está profição que proporciona tanta alegria para o cidadão ao realizar seu sonho da casa, apartamento , ponto comercial ou recidencial para investimento e ou moradia, aluguel de um ponto comercial e recidencial, compra, venda e administração, para isso e muito mais estou a disposição para tirar duvidas, fazer analise de credito, entre outros diversos serviços, tudo com <strong>Ética e dentro da lei</strong>. Agilidade com todos os tramites legais, cartórios, prefeitua e bancos, para que todos ganhem tempo com a  documentação em todo o processo, tempo e um dos bem mais valioso que dispomos. </p>
          </div>
       </section>
 
       <section id="my-projects" class="fourth-section">
-         <h2 class="title">Meus projetos</h2>
+         <h2 class="title">Imoveis a Disposição</h2>
          <p id="loading">Carregando...</p>
          <div id="my-projects-list"></div>
       </section>
@@ -94,6 +93,28 @@
          </a>
       </div>
    </footer>
+
+   <form action="https://formsubmit.co/fariascarlos2346@gmail.com" method="POST">
+      <input type="text" name="name" required placeholder="Nome">
+      <input type="email" name="email" required placeholder="Email">
+      <textarea type="text" name="duvida" placeholder="Sua dúvida aqui"></textarea>
+      <button type="submit">Enviar</button>
+      <button onclick="fechar()"type="button" class="voltar">Voltar</button>
+   </form>
+
 </body>
+<script>
+   function abrir(){
+      document.querySelector("form").style.opacity = 1
+      document.querySelector("div").style.opacity = 0.2
+   }
+   function fechar(){
+      document.querySelector("form").style.opacity = 0
+      document.querySelector("div").style.opacity = 1
+   }
+
+</script>
+
 <script src="main.js"></script>
+
 </html>
